@@ -98,7 +98,7 @@ img{
     margin: 0;
     padding-top: 250px;
     padding-bottom: 140px;
-    background-image: url('img/pubg-13.jpg');
+    background-image: url("../img/pubg-13.jpg");
     background-color: transparent;
     background-size: cover;
     background-repeat: no-repeat;
