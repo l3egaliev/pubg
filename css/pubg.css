@@ -1,0 +1,273 @@
+*
+{
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+body
+{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+
+.container
+{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header{
+    background-color: #1c1c1c;
+    height: 120px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+    
+}
+.header-container
+{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.header-logo
+{
+    margin-right: 100px;
+    
+}
+.nav-list
+{
+    display: flex;
+    
+}
+.nav-item
+{
+   display: inline-block;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 50px;
+}
+
+.nav-link
+
+{
+   
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    
+}
+.nav-link-hover
+{
+        opacity: 0.5;
+}
+
+.nav-link:hover
+{
+    color: rgb(165, 14, 14);
+   
+}
+.nav-link-hover:hover
+{
+    opacity: 1;
+    color:#fff;
+}
+.header-menu
+{
+    display: none;
+    width: 30px;
+    height: 25px;
+    background-color: transparent;
+    background-image: url('/img/list.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.hero{
+    margin: 0;
+    padding-top: 250px;
+    padding-bottom: 140px;
+    background-image: url('/img/pubg-13.jpg');
+    background-color: transparent;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.hero-heading
+{
+    transform: translateY(-30px);
+    margin: 0;
+    max-width: 900px;
+    text-align: center;
+    color: #f1a800;
+    text-shadow: #cac6bd 2px 2px ;
+    text-shadow: 2px 2px 7px 3px #fff;
+    box-shadow: 5px 2px 10px 2px #fff;
+    font-size: 80px;
+    font-weight: 700;
+    font-family: "RefrigeratorDeluxe","Roboto Condensed",BlinkMacSystemFont,-apple-system,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+.hero-description
+{
+    padding: 0;
+    transform: translateY(-30px);
+    color: #ffff;
+    text-shadow: rgb(133, 11, 11) 2px 2px;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: "RefrigeratorDeluxe","Roboto Condensed",BlinkMacSystemFont,-apple-system,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue","Helvetica","Arial",sans-serif;;
+}
+.hero-list
+{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    background-color: #f1a800;
+    box-shadow: 5px 7px 10px 2px #fff;
+    padding: 30px;
+    
+}
+.hero-item{
+   justify-content: space-between;
+    margin-left: 30px;
+    
+    
+}
+.hero-item:not(:last-child)
+{
+    margin-right: 100px;
+}
+.hero-link
+{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-shadow: #1c1c1c 1px 1px;
+   
+}
+.hero-link:hover
+{
+   
+   color: #1c1c1c;
+   
+   
+}
+.footer{
+    background-color: #1c1c1c;
+    height: 100px;
+    
+}
+.footer-container
+{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.footer-logo{
+    margin-right: 100px;
+    max-width: 200px;
+}
+.footer-list{
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+}
+.footer-item:not(:last-child)
+{
+    margin-right: 30px;
+}
+.footer-link{
+    color: #fff;
+    font-size: 12px;
+}
+.footer-coopyright
+{
+    display: block;
+    color: #fff;
+    font-size: 11px;
+    margin-left: 30px;
+    opacity: 0.6;
+    margin-top: 15px;
+}
+.iframe{
+    background-color: #cac6bd;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('/img/PUBG-WALLPAPERS-4K-28.jpg');
+    padding-top: 90px;
+    padding-bottom: 90px;
+    margin-left: 0;
+}
+.iframe-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    transform: translateX(-130px);
+   
+}
+@media (max-width: 800px)
+{
+    .nav-list{
+        display: none;
+    }
+    .header-menu{
+        display: block;
+        margin-left: auto;
+        margin-right: 20px;
+    }
+    .header{
+        max-height: 80px;
+    }
+    .header-logo{
+        margin-left: 40px;
+        width: 100px;
+    }
+}
+@media (max-width: 1186px)
+{
+    .nav-link
+    {
+        font-size: 13px;
+        width: 100%;
+    }
+    .nav-list:not(:last-child){
+        display: flex;
+        align-items: center;
+    }   
+    .hero-heading{
+        font-size: 50px;
+    }
+}
+@media (max-width: 576px){
+    .hero-heading{
+        font-size: 40px;
+    }
+    .hero-description{
+        font-size: 17px;
+        margin-left: 20px;
+    }
+    .hero-list{
+        justify-content: space-between;
+    }
+    .hero-item:not(:last-child)
+    {
+        margin-right: 13px;
+    }
+    .hero-link{
+        font-size: 12px;
+        border-bottom: 3px solid #1c1c1c;
+    }
+}
